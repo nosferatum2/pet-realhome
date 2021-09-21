@@ -1,0 +1,23 @@
+.feature {
+  background: $grey;
+  padding: 100px 0;
+  text-align: center;
+
+  &__col {
+    padding: 0 20px;
+  }
+  &__icon,
+  &__title {
+    padding-bottom: 17px;
+  }
+
+  &__title {
+    font-family: "Raleway";
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  &__p {
+    font-size: 0.875rem;
+    line-height: 1.714;
+  }
+}

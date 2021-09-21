@@ -1,0 +1,167 @@
+.home {
+  position: relative;
+
+  &__offering {
+    padding: 125px 0;
+    padding-right: 0;
+
+    p {
+      line-height: 1.687;
+      margin-left: 2.5rem;
+    }
+    h3 {
+      line-height: 1.351;
+    }
+    h3,
+    p {
+      margin-bottom: 0;
+    }
+  }
+  &__offeringTitle {
+    font-size: 2.3125rem;
+    font-family: "Raleway";
+    color: $fontColorMain;
+    text-align: right;
+  }
+
+  &_border {
+    position: relative;
+
+    // Paint line under text
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 12px;
+      width: 30px;
+      height: 3px;
+      background-color: $fontColorMain;
+    }
+  }
+
+  &__startbuying {
+    background-color: $grey4;
+    &_title {
+      flex: 10;
+      padding: 50px 0;
+
+      h3 {
+        font-size: 2.3125rem;
+        font-weight: 300;
+        color: $fontColorMain;
+        font-family: "Raleway";
+      }
+    }
+    &__btn {
+      margin: auto;
+      background-color: $red;
+      width: 174px;
+      height: 48px;
+      font-weight: 700;
+      font-family: "Raleway";
+
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   bottom: 0;
+      //   left: 55px;
+      //   transform: translateX(-50%);
+      //   width: 110px;
+      //   height: 3px;
+      //   background: $red;
+      // }
+    }
+  }
+
+  &__testimonials {
+    background-color: #000000;
+
+    img {
+      opacity: 0.55;
+    }
+
+    &__carousel-caption {
+      top: 120px;
+
+      h5 {
+        position: relative;
+        padding-bottom: 40px;
+        font-size: 45px;
+        line-height: 50px;
+        font-weight: 500;
+        font-family: "Raleway";
+
+        // Paint line under text
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 110px;
+          height: 3px;
+          background: $red;
+        }
+      }
+
+      &_desc,
+      &_author {
+        color: $primary;
+      }
+
+      &_desc {
+        width: 75%;
+        margin: 50px auto 35px;
+        font-size: 24px;
+        line-height: 35px;
+        font-family: "Raleway";
+      }
+
+      &_author {
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 400;
+        font-family: "Playfair Display";
+      }
+    }
+
+    &__carousel-indicators {
+      & [data-bs-target] {
+        width: 15px;
+        height: 15px;
+        border: 2px solid $primary;
+        border-radius: 50%;
+        background-color: unset;
+      }
+      .active {
+        border: 0;
+        width: 19px;
+        height: 19px;
+        background-color: $primary;
+      }
+    }
+  }
+
+  .OurClients {
+    margin: 90px auto;
+
+    &__title {
+      font-weight: 300;
+      font-family: "Raleway";
+      margin: auto;
+    }
+
+    &__icons {
+      display: flex;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    &__title,
+    &__icons {
+      padding-left: 0;
+    }
+
+  }
+}

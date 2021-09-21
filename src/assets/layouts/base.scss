@@ -1,0 +1,13 @@
+body {
+  font-family: Playfair Display, serif;
+  color: $fontColorMain;
+  width: 100%;
+  overflow-x: hidden;
+
+  header,
+  main {
+    p {
+      color: $fontColorDesc;
+    }
+  }
+}

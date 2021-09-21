@@ -1,0 +1,121 @@
+.realestateprop {
+  text-align: center;
+  padding: 100px 0;
+  background: $grey2;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  &__h2 {
+    padding-bottom: 30px;
+    position: relative;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 110px;
+      height: 3px;
+      background: $red;
+    }
+  }
+
+  &__subtitle {
+    max-width: 560px;
+    margin: 0 auto;
+    // minus margin of a card
+    padding-bottom: calc(70px - 15px);
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &_card {
+      // flex: 0 1 calc(25% - 1rem);
+      // width: 32%;
+      padding: 0;
+      margin: 15px;
+      // width: calc(33.33333% - 30px);
+      border: 1px solid $grey3;
+    }
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    // height: 242px;
+    overflow: hidden;
+    max-height: 242px;
+
+    img {
+      // width: 100%;
+      display: block;
+      border: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 242px;
+    }
+  }
+
+  &__h4 {
+    margin-top: 30px;
+    font-weight: 500;
+    font-family: "Raleway";
+  }
+
+  &__price {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: $red;
+    font-family: "Helvetica";
+  }
+
+  &__desc {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid $grey3;
+    font-family: "Helvetica";
+    padding: 15px 0;
+  }
+
+  &__item {
+    padding: 0 12px;
+    position: relative;
+    color: $fontColorDesc;
+    &:after {
+      content: "";
+      position: absolute;
+      right: -2px;
+      top: 40%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $dotgrey;
+    }
+
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  &__btn {
+    margin: 35px auto 0;
+    background-color: $red;
+    width: 174px;
+    height: 48px;
+    font-weight: 700;
+    font-family: "Raleway";
+  }
+}

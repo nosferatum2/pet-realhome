@@ -1,0 +1,94 @@
+.carousel-our-agents {
+  // border: 1px solid aquamarine;
+  margin-top: 80px;
+  height: 465px;
+  // overflow: hidden;
+  &__card {
+    display: flex;
+
+    &_desc {
+      flex: 8;
+    }
+    &_img {
+      flex: 4;
+      height: 465px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    &__content {
+      &_name,
+      &_text,
+      &_title {
+        margin: 0;
+      }
+
+      &_name {
+        padding-top: 40px;
+      }
+
+      &_title {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        position: relative;
+        font-weight: 300;
+        font-family: "Raleway", sans-serif;
+        font-size: 45px;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 55px;
+          transform: translateX(-50%);
+          width: 110px;
+          height: 3px;
+          background: $red;
+        }
+      }
+      &_text {
+        padding: 35px 0;
+      }
+
+      &__links {
+        display: flex;
+
+        i {
+          padding-right: 10px;
+          color: $fontColorDesc;
+        }
+      }
+
+      &__phone {
+        padding-right: 30px;
+        a {
+          text-decoration: none;
+          color: $fontColorMain;
+        }
+      }
+      &__mail {
+        a {
+          text-decoration: underline;
+          text-transform: none;
+          color: #e2574c;
+        }
+      }
+    }
+  }
+
+  &__indicators {
+
+    & [data-bs-target] {
+      width: 15px;
+      height: 15px;
+      border: 2px solid $fontColorDesc;
+      border-radius: 50%;
+    }
+    .active {
+      background-color: $red;
+      // border-color: $red;
+      border: 0;
+      width: 19px;
+      height: 19px;
+    }
+  }
+}
